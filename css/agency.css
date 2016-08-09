@@ -302,6 +302,8 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+
+
 #mechanical .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -367,6 +369,145 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }
+
+
+
+#electrical .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#electrical .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#electrical .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#electrical .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#electrical .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#electrical .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#electrical .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#electrical .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#electrical .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#electrical .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#electrical .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#electrical * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #electrical .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+
+
+
+#software .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#software .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#software .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#software .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#software .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#software .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#software .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#software .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#software .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#software .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#software .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#software * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #software .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+
 .timeline {
   list-style: none;
   padding: 0;
