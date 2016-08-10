@@ -309,19 +309,19 @@ header .intro-text .intro-heading {
 #mechanical .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic
+    font-style: normal
 }
 
 #electrical .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic
+    font-style: normal
 }
 
 #software .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic
+    font-style: normal
 }
 
 section {

@@ -301,8 +301,8 @@ section {
                 margin: 0;
             }
             p {
-                @include serif-font;
-                font-style: italic;
+                font-style: normal;
+                text-transform: none;
                 font-size: 16px;
                 margin: 0;
             }
@@ -373,8 +373,7 @@ section {
                 margin: 0;
             }
             p {
-                @include serif-font;
-                font-style: italic;
+                font-style: normal;
                 font-size: 16px;
                 margin: 0;
             }
@@ -445,8 +444,7 @@ section {
                 margin: 0;
             }
             p {
-                @include serif-font;
-                font-style: italic;
+                font-style: normal;
                 font-size: 16px;
                 margin: 0;
             }
