@@ -360,7 +360,7 @@ section h3.section-subheading {
 #mechanical .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto
 }
 
@@ -400,7 +400,7 @@ section h3.section-subheading {
 }
 
 #mechanical .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
     text-align: center;
