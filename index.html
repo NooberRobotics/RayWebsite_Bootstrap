@@ -1107,6 +1107,7 @@
                                 <h2>State Machine</h2>
                                 <img class="img-responsive img-centered" src="img/" alt="">
                                 <p>The behaviour of the platform was set up so as to be defined by a number of states. Enumerations gave a fast and readable way of executing commands appropriate for a given state and allowed for slim communication-channels between our objects, maintaining encapsulation.</p>
+                                <p>We had a number of classes that made use of all of our states. The main one was the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Controller.cpp">Controller</a> class. It determined which state we were in and acted appropriately, delegating responsibility to the other classes. The controller determined the state from the information that was given to it by the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Robot.cpp">Robot</a> class' "cruise" function.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
@@ -1132,8 +1133,10 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>PID Control</h2>
+                                <p class="item-intro text-muted">Following the tape.</p>
                                 <img class="img-responsive img-centered" src="img/" alt="">
-                                <p></p>
+                                <p>A huge portion of this project was getting the robot to be able to accurately drive along the streets of the city. The streets themselves were marked with black electrical tape. QRD sensors, as described previously, were used to differentiate the tape from the white competiton surface. To control the robot, we used all of proportional, integral, and derivative gains to keep the robot on the tape as best as we could. </p>
+                                <p>Tuning was done experimentally. The way we computed each component of the control algorithm can be viwed in the Tape class of our code, <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Tape.cpp">here</a>, with the constants defined in our <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Config.hpp">configuration header file</a>.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
@@ -1187,7 +1190,9 @@
                                 <!-- Project Details Go Here -->
                                 <h2>GitHub</h2>
                                 <img class="img-responsive img-centered" src="img/" alt="">
-                                <p></p>
+                                <p>As we had multiple members working on the same code, often in parallel, some form of version control was needed. We chose to use GitHub, as it is used in industry and we wanted to expand our skillset. This allowed us to all make changes to the code, perform individual code review, as well as test out new ideas. We tested out a few features that did not work as intended, and this form of version control allowed us to easily revert to previous code that was in a working state.</p>
+                                <p>We also used branching when working on new features. When one portion of the code had been tested and verified, we would branch it before moving onto the next segment (eg. progressing from tape following to tape following + IR sensing). This ensured that individual components of the code could be individually tested and allowed for a modular program.</p>
+                                <p>All of our code can be viewed in our github repository <a href="https://github.com/NooberRobotics/TheRay/tree/master/TheRay">here</a>.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
