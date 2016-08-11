@@ -271,7 +271,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#sensors" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -285,7 +285,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#ir" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -295,11 +295,11 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>IR filtration</h4>
-                        <p class="text-muted">Biquad circuits to filter and amplify 1kHz IR light</p>
+                        <p class="text-muted">Specialized circuits to filter and amplify 1kHz IR light</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#borris" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -313,7 +313,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#tinah" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -327,7 +327,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#hbridges" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -341,7 +341,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#electricalModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#servodrivers" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -784,7 +784,7 @@
 
 
     <!-- Sensor Systems -->
-    <div class="portfolio-modal modal fade" id="electricalModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="sensors" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -798,18 +798,19 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>CAD Design</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>Sensor Systems</h2>
+                                <p class="item-intro text-muted">QRD, QSD and Touch Sensors</p>
+                                <p>The QRD sensors operate by emitting IR light and measuring the amount reflected back. This allowed the robot to interpret the relative reflectance levels of the surface detected, thus allowing it to differentiate between black tape and the white streets of the course. These were connected directly into TINAH’s analog inputs. The Ray used four of these sensors, two for tape following and two for intersection detection.
+
+
+                                </p>
                                 <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                    The QSD sensors detected the infrared light emitted by the passengers. These were connected to specialized circuits which combined DC rectifying, filtering and amplification of the signal. The Ray has one of each of these sensors on each side to detect the prospective passengers on the course.
+                                </p>
+                                <p>
+                                    The Ray has four touch sensors on the front behind its metal bumper. This allows it to detect collision with the sidewalks and the opponent robot on the track.
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -819,7 +820,7 @@
     </div>
 
     <!-- IR Filtration -->
-    <div class="portfolio-modal modal fade" id="electricalModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="ir" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -832,12 +833,10 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>laser cutting</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>IR Filtration</h2>
+                                <p class="item-intro text-muted">DC block, biquad Filtering and signal rectifying all in one</p>
+                                <p>The IR circuits combined a DC block, a biquad filter, and a signal rectifier to produce an analog DC signal proportional to the strength of the signal detected.</p>
+                                <p>The DC block removed the DC component of the signal. The biquad filter removes all signals that are not within a certain frequency range (tuned to detect 1 kHz). This circuit also amplifies the signal. The signal rectifier takes the output of the biquad filter to produce the final signal, it was also slightly modified to provide further amplification of the signal..</p>
                             </div>
                         </div>
                     </div>
@@ -847,7 +846,7 @@
     </div>
 
     <!-- Borris -->
-    <div class="portfolio-modal modal fade" id="electricalModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="borris" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -861,12 +860,13 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>Borris</h2>
+                                <p class="item-intro text-muted">Connecting Everything Together</p>
+                                <p>
+                                Borris was desinged as an alternative to wires. It allowed the Ray to have a clean internal electrical system. Furthermore, it minimized the possibilities for issues from loose connections.
+                                </p>
+                                <p>Borris also allowed the IR circuits and H-bridges to be pluged in using a modular interface</p>
+
                             </div>
                         </div>
                     </div>
@@ -876,7 +876,7 @@
     </div>
 
     <!-- TINAH -->
-    <div class="portfolio-modal modal fade" id="electricalModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="tinah" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -905,7 +905,7 @@
     </div>
 
     <!-- H-Bridges -->
-    <div class="portfolio-modal modal fade" id="electricalModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="hbridges" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -934,7 +934,7 @@
     </div>
 
     <!-- Servo-drivers -->
-    <div class="portfolio-modal modal fade" id="electricalModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="servodrivers" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
