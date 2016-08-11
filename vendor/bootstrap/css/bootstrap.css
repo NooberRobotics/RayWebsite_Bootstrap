@@ -3117,17 +3117,21 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
+  text-align: center;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
   background-color: #286090;
   border-color: #122b40;
+ text-align: center;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #286090;
   border-color: #204d74;
+  text-align: center;
+
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3135,6 +3139,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #286090;
   border-color: #204d74;
+  text-align: center;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3148,6 +3153,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #204d74;
   border-color: #122b40;
+  text-align: center;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3165,6 +3171,7 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #337ab7;
   border-color: #2e6da4;
+  text-align: center;
 }
 .btn-primary .badge {
   color: #337ab7;
@@ -5943,6 +5950,7 @@ button.close {
   line-height: 1.42857143;
 }
 .modal-body {
+    text-align: left;
   position: relative;
   padding: 15px;
 }

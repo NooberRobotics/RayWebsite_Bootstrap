@@ -75,6 +75,7 @@ h6 {
     @include button-variant(white, $brand-primary, $brand-primary);
     @include heading-font;
     font-weight: 700;
+    text-align: center;
 }
 
 .btn-xl {
@@ -787,7 +788,7 @@ ul.social-buttons {
         border: none;
         min-height: 100%;
         padding: 100px 0;
-        text-align: center;
+        text-align: left;
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
@@ -878,3 +879,5 @@ body {
     text-align: center;
     vertical-align: middle;
 }
+
+

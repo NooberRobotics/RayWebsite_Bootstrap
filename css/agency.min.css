@@ -29,7 +29,8 @@ h5,
 h6 {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700
+    font-weight: 700;
+    text-align: center
 }
 
 .text-muted {
@@ -80,7 +81,9 @@ a:hover {
 .btn-primary {
     color: #fff;
     background-color: #fed136;
-    border-color: #fed136
+    border-color: #fed136;
+    text-align: center
+
 }
 
 .btn-primary.active,
@@ -90,7 +93,8 @@ a:hover {
 .open .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #fec503;
-    border-color: #f6bf01
+    border-color: #f6bf01;
+    text-align: center
 }
 
 .btn-primary.disabled,
@@ -109,7 +113,8 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
     background-color: #fed136;
-    border-color: #fed136
+    border-color: #fed136;
+    text-align: center
 }
 
 .btn-primary .badge {
@@ -920,7 +925,7 @@ ul.social-buttons li a:hover {
     border: none;
     min-height: 100%;
     padding: 100px 0;
-    text-align: center
+    text-align: left;
 }
 
 .portfolio-modal .modal-content h2 {
