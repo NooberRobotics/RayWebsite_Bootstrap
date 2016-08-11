@@ -75,6 +75,8 @@ h6 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
+
 }
 
 .btn-primary:hover,
@@ -85,6 +87,7 @@ h6 {
     color: white;
     background-color: #fec503;
     border-color: #f6bf01;
+        text-align: center;
 }
 
 .btn-primary:active,
@@ -110,6 +113,7 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
     background-color: #fed136;
     border-color: #fed136;
+    text-align: center;
 }
 
 .btn-primary .badge {
@@ -355,7 +359,7 @@ section h3.section-subheading {
 #mechanical .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -395,7 +399,7 @@ section h3.section-subheading {
 }
 
 #mechanical .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: white;
     text-align: center;
@@ -922,7 +926,7 @@ ul.social-buttons li a:active {
     border: none;
     min-height: 100%;
     padding: 100px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .portfolio-modal .modal-content h2 {
