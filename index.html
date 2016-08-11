@@ -856,10 +856,10 @@
 
                                 </p>
                                 <p>
-                                    The QSD sensors detected the infrared light emitted by the passengers, producing a signal whose strength was proportional to the light. These were connected to specialized circuits which combined DC blocking, filtering (using a biquad filter),DC rectifying, and amplification of the signal in order to produce an approximate DC voltage to be read by the analog inputs of the processor board. The Ray has one of each of these sensors on each side to detect the prospective passengers on the course.
+                                    The QSD sensors detected the infrared light emitted by the passengers, producing a signal whose strength was proportional to the light. These were connected to specialized circuits which combined DC blocking, filtering,DC rectifying, and amplification of the signal in order to produce an approximate analog DC voltage. The Ray has one of each of these sensors on each side to detect the prospective passengers on the course.
                                 </p>
                                 <p>
-                                    The Ray has four touch sensors on the front behind its metal bumper. This allows it to detect collision with the sidewalks and the opponent robot on the track.
+                                    The Ray has four touch sensors on the front behind its metal bumper. This allows it to detect collision with the sidewalks and the opponent robot on the track. Two sensors are located on the front of the robot, and two on the angled pannels connecting the front and the sides. The two touch sensors on the left half of the robot and the two on the right half are each combined into one signal, producing an effective "OR" functionality between the two on each half. This allows us to have one digital input for the left half, and one for the right, while still utilizing four sensors for increased accuracy.
 
                                 </p>
                             </div>
@@ -886,8 +886,8 @@
                             <div class="modal-body">
                                 <h2>IR Filtration</h2>
                                 <p class="item-intro text-muted">DC block, biquad Filtering and signal rectifying all in one</p>
-                                <p>The IR circuits combined a DC block, a biquad filter, and a signal rectifier to produce an analog DC signal proportional to the strength of the signal detected.</p>
-                                <p>The DC block removed the DC component of the signal. The biquad filter removes all signals that are not within a certain frequency range (tuned to detect 1 kHz). This circuit also amplifies the signal. The signal rectifier takes the output of the biquad filter to produce the final signal, it was also slightly modified to provide further amplification of the signal..</p>
+                                <p>The IR circuits combined a DC block, a biquad filter, a signal rectifier and an amplifyer to produce an analog DC signal proportional to the strength of the signal detected.</p>
+                                <p>The DC block removed the DC component of the signal. The biquad filter removes all signals that are not within a certain frequency range (tuned to detect 1 kHz, with a range of approximately +/- 500Hz). The signal rectifier takes the output of the biquad filter to produce the final, nearly DC signal (using a large decay constant), it was also slightly modified to provide further amplification of the signal. This gave us a near analog voltage that could be reliably read by the processor board.</p>
                             </div>
                         </div>
                     </div>
@@ -896,7 +896,7 @@
         </div>
     </div>
 
-    <!-- Borris -->
+    <!-- Boris -->
     <div class="portfolio-modal modal fade" id="borris" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -911,12 +911,12 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Borris</h2>
+                                <h2>Boris</h2>
                                 <p class="item-intro text-muted">Connecting Everything Together</p>
                                 <p>
-                                    Borris was desinged as an alternative to wires. It allowed the Ray to have a clean internal electrical system. Furthermore, it minimized the possibilities for issues from loose connections.
+                                    Boris was desinged as an alternative to wires. It allowed the Ray to have a clean internal electrical system by acting as a rack for our circuits and handling all connections between them. It removed the need for dozens of wires by providing power rails to the circuits from very few external connections, and made all inuts and outputs extremely accessible and easy to connect to the processor board.
                                 </p>
-                                <p>Borris also allowed the IR circuits and H-bridges to be pluged in using a modular interface</p>
+                                <p>Boris also allowed the IR circuits and H-bridges to be pluged in using a modular interface. All of our circuits could directly plug into Boris, and could be very easily removed and replaced in a matter of seconds. It also minimized the possibilities for issues from loose connections, by having all connections close together and often in a single cable/row of pins. </p>
 
                             </div>
                         </div>
@@ -941,11 +941,11 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>TINAH</h2>
+                                <p class="item-intro text-muted">Controlling the robot.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <p>The TINAH board was the brain of the robot. It acted as our main processor/computer and ran all of our code. It is a modified Arduino board custom made for this course and provided by the instructors. It contains 8 analog inputs, 16 digital inputs/outputs, 8 PWM analog outputs, 4 motor outputs, multiple servo outputs, as well as some knobs, switches, buttons, and an LCD screen. TINAH is powered off a 16.7V LiPo battery. </p>
+                                <p>We mounted our TINAH vertically on the inside of the robot against the left wall. This allowed it to take up minimal space as well as have all its inputs and outputs be as close as possible to Boris (where most of them needed to be connected).</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -970,11 +970,11 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>H-Bridges</h2>
+                                <p class="item-intro text-muted">Powering the drivetrain.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <p>Our system made use of two H-bridge circuits to drive the robot at a high power. The TINAH board was limited in the current that it could provide through the motor outpurs, so external power circuitry was needed. One circuit was used for each motor/wheel of the drivetrain. It made use of four MOSFET's and four zener diodes to switch the motor quickly and at a high current. </p>
+                                <p>Design credit for the H-bridges we used to Scott Lawson.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -999,11 +999,11 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>Servo Driver</h2>
+                                <p class="item-intro text-muted">Operating the claw.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <p>We decided to use a small servo motor to reliably and accurately open and close the claw on the robot's arm. The claw was mounted at the end of the arm using some 3D printed brackets and screws. A small gear was super glued to the sero that interfaced with the gears at the base of the robot's "fingers." Open/close angles were determined experimentally.</p>
+                                <p>Because the TINAH board is very limited in the current that it can provide, the servo needed to be powered externally. To do this, we used an 8.4V LiPo battery that was regulated to 5V using a 7805c voltage regulator. The battery, as well as the voltage regulator, plugged into Boris for modularity, and the regulated voltage was plugged into TINAH's servo "input power" (jumped to TINAH's internal 5V during normal operation). </p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
