@@ -102,11 +102,11 @@
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
                     <h4 class="service-heading" style="text-align: left">ENPH 253</h4>
-                    <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the Engineering Physics program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
+                    <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the <a href= "http://www.engphys.ubc.ca/">Engineering Physics</a> program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
                 </div>
                 <div class="col-sm-8 col-xs-12">
                     <h4 class="service-heading" style="text-align: left">2016 competition</h4>
-                    <p class="text-muted">The competition of this year was set up as follows: traverse the roads marked with black tape (see map to the right), looking for passengers to pick up and transport to the drop-off area marked in gray. Potential passengers stand on the side of the curb on a base emitting IR light with a 1 kHz frequency. Two vehicles will be on the track at the same time. In the event of a collision, the robot must back away from the impact within 2 seconds. The robot that drops off the most dolls within two minutes wins the round. </p>
+                    <p class="text-muted">The competition of this year was set up as follows: traverse the roads marked with black tape (see map to the right), looking for passengers to pick up and transport to the drop-off area marked in gray. Potential passengers stand on the side of the curb on a base emitting IR light with a 1 kHz frequency. Two vehicles will be on the track at the same time. In the event of a collision, the robot must back away from the impact within 2 seconds. The robot that drops off the most dolls within two minutes wins the round. The <a href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
                 </div>
 
                 <div class="col-sm-4 col-xs-12 text-center">
@@ -115,7 +115,7 @@
 
                 <div class="col-xs-12">
                     <h4 class="service-heading" style="text-align: left">Team 5, Noober Robotics</h4>
-                    <p class="text-muted">This website was made by the four students making up team 5 in the 2016 competition. The purpose of the website is to outline the scope of the project and some of the solutions we came up with in designing an autonomous system that was able to reliably perform the necessary functionality. We are very proud of the result and hope visitors to the site appreciate the effort that has been required.</p>
+                    <p class="text-muted">This website was made by the four students making up team 5 in the 2016 competition. These students achieved the highest robot grade of this year's iteration of the course (100%) and came second place in the competition. The purpose of the website is to outline the scope of the project and some of the solutions we came up with in designing an autonomous system that was able to reliably perform the necessary functionality. We are very proud of the result and hope visitors to the site appreciate the effort that has been required.</p>
                 </div>
             </div>
         </div>
@@ -872,7 +872,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Sensor Systems</h2>
-                                <img class="img-responsive img-centered" src="img/electrical/FrontSensorPinout.png" alt="">
+                                <img class="img-responsive img-centered" src="img/electrical/sensorsUsed.PNG" alt="">
                                 <p class="item-intro text-muted">QRD, QSD and Touch Sensors</p>
                                 <p>The QRD sensors operate by emitting IR light and measuring the amount reflected back. This allowed the robot to interpret the relative reflectance levels of the surface detected, thus allowing it to differentiate between black tape and the white streets of the course. These were connected directly into TINAH’s analog inputs. The Ray used four of these sensors, two for tape following and two for intersection detection.
 
@@ -996,7 +996,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>H-Bridges</h2>
                                 <p class="item-intro text-muted">Powering the drivetrain.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                                <img class="img-responsive img-centered" src="img/electrical/H-Bridge.png" alt="">
                                 <p>Our system made use of two H-bridge circuits to drive the robot at a high power. The TINAH board was limited in the current that it could provide through the motor outputs, so external power circuitry was needed. One circuit was used for each motor/wheel of the drivetrain. It made use of four MOSFET's and four Zener diodes to switch the motor quickly and at a high current. </p>
                             </div>
                         </div>
@@ -1056,10 +1056,10 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Encapsulation</h2>
-                                <img class="img-responsive img-centered" src="img/" alt="">
+                                <img class="img-responsive img-centered" src="img/software/RayObjectGraph.png" alt="">
                                 <p>We emphasized encapsulation as an important basis for our code-base. We thus set up a strict hierarchical system:</p>
 
-                                <img class="img-responsive img-centered" src="img/software/RayObjectGraph.png" alt="">
+
 
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
@@ -1112,7 +1112,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>State Machine</h2>
-                                <img class="img-responsive img-centered" src="img/" alt="">
+                                <img class="img-responsive img-centered" src="img/Software/controller.PNG" alt="">
                                 <p>The behaviour of the platform was set up so as to be defined by a number of states. Enumerations gave a fast and readable way of executing commands appropriate for a given state and allowed for slim communication-channels between our objects, maintaining encapsulation.</p>
                                 <p>We had a number of classes that made use of all of our states. The main one was the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Controller.cpp">Controller</a> class. It determined which state we were in and acted appropriately, delegating responsibility to the other classes. The controller determined the state from the information that was given to it by the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Robot.cpp">Robot</a> class' "cruise" function.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -1141,7 +1141,8 @@
                                 <!-- Project Details Go Here -->
                                 <h2>PID Control</h2>
                                 <p class="item-intro text-muted">Following the tape.</p>
-                                <img class="img-responsive img-centered" src="img/" alt="">
+                                <img class="img-responsive img-centered" src="img/Software/pid.png" alt="">
+                                <p>Image Source: <a href="https://en.wikipedia.org/wiki/PID_controller">Wikipedia</a></p>
                                 <p>A huge portion of this project was getting the robot to be able to accurately drive along the streets of the city. The streets themselves were marked with black electrical tape. QRD sensors, as described previously, were used to differentiate the tape from the white competiton surface. To control the robot, we used all of proportional, integral, and derivative gains to keep the robot on the tape as best as we could. </p>
                                 <p>Tuning was done experimentally. The way we computed each component of the control algorithm can be viwed in the Tape class of our code, <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Tape.cpp">here</a>, with the constants defined in our <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Config.hpp">configuration header file</a>.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
