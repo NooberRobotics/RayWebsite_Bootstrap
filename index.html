@@ -919,7 +919,7 @@
                             <div class="modal-body">
                                 <h2>IR Filtration</h2>
                                 <img class="img-responsive img-centered" src="img/electrical/th%20ir%20filtration.jpg" alt="">
-                                <p class="item-intro text-muted">DC block, <a href="http://mysite.du.edu/~etuttle/electron/elect65.htm">biquad</a> Filtering and signal rectifying all in one</p>
+                                <p class="item-intro text-muted">DC block, <a href="http://mysite.du.edu/~etuttle/electron/elect65.htm">biquad</a> filtering and signal rectifying all in one</p>
                                 <p>The IR circuits combined a DC block, a biquad filter, a signal rectifier and an amplifyer to produce an analog DC signal proportional to the strength of the signal detected.</p>
                                 <p>The DC block removed the DC component of the signal. The biquad filter removes all signals that are not within a certain frequency range (tuned to detect 1 kHz, with a range of approximately +/- 500Hz). The signal rectifier takes the output of the biquad filter to produce the final, nearly DC signal (using a large decay constant), it was also slightly modified to provide further amplification of the signal. This gave us a near analog voltage that could be reliably read by the processor board.</p>
                             </div>
@@ -1067,8 +1067,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Encapsulation</h2>
                                 <img class="img-responsive img-centered" src="img/software/RayObjectGraph.png" alt="">
-                                <p>We emphasized encapsulation as an important basis for our code-base. We thus set up a strict hierarchical system:</p>
-
+                                <p>We emphasized encapsulation as an important basis for our code-base. We thus set up a strict hierarchical system as to which components of the software could relay information to which other components. This helped improve code readability, made bugs easier to find, and made all classes ready for change, as they were modular and independent of the other classes' implementations.</p>
 
 
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -1096,7 +1095,9 @@
                             <div class="modal-body">
                                 <h2>Performance/Speed</h2>
                                 <img class="img-responsive img-centered" src="img/" alt="">
-                                <p></p>
+                                <p>With our base program tried to maximize performance speed in our code. This included doing things like avoiding re-initializing variables, avoiding all sorts of print statements, and not performing redundant boolean checking. These things did have an effect. For example, when we enabled some print statements in order to test sensor readings (eg IR values), our code became so slow that we could hardly tape follow. </p>
+
+                                <p>It was only when we got to handling special cases that this became less of a concern. By that point, our code was more than fast enough (using less than 10% of our allotted ram) to be competitively viable. There were certain special cases (points on the map that were different from others) where, due to time constraints, special handling was the most viable option. This is where we did include some if checking. However, due to the infrequency of these cases, there was no noticeable impact on the speed nor reliability of our code.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
@@ -1180,8 +1181,8 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>X-Code + Arduino</h2>
-                                <img class="img-responsive img-centered" src="img/" alt="">
-                                <p></p>
+                                <img class="img-responsive img-centered" src="img/Software/xcode.png" alt="">
+                                <p>All of our code was written in C++, with X-Code being the IDE of choice due to things like its user-friendly environment and compatability with Git and GitHub. Our processor ran Arduino, so we set up a .ino file that would import and run our .cpp files accordingly. All that was needed was some changes to the libraries that the instructors provided us, and we were able to efficiently structure our C++ code like any other program.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
