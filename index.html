@@ -100,21 +100,12 @@
             </div>
 
             <div class="row">
-                <!--    <div class="col-sm-12 col-xs-12"> -->
-                <!--<<<<<<< HEAD
-                    <h4 class="service-heading" style="text-align: left">ENPH 253</h4>
-                    <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the <a href= "http://www.engphys.ubc.ca/">Engineering Physics</a> program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <h4 class="service-heading" style="text-align: left">2016 competition</h4>
-                    <p class="text-muted">The competition of this year was set up as follows: traverse the roads marked with black tape (see map to the right), looking for passengers to pick up and transport to the drop-off area marked in gray. Potential passengers stand on the side of the curb on a base emitting IR light with a 1 kHz frequency. Two vehicles will be on the track at the same time. In the event of a collision, the robot must back away from the impact within 2 seconds. The robot that drops off the most dolls within two minutes wins the round. The <a href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
-=======-->
                 <h4 class="service-heading" style="text-align: left">ENPH 253: Introduction to Instrument Design</h4>
                 <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the Engineering Physics program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
             </div>
             <div class="col-sm-8 col-xs-12">
                 <h4 class="service-heading" style="text-align: left">2016 competition</h4>
-                <p class="text-muted">The competition for 2016 was to design and build an autonomous robot capable of navigating a course, with the ability to pick up passengers at multiple locations and drop them off at a predetermined location. The roads on the course were marked with black tape (see the course map to the right) and the passengers were located on infrared beacons emitting at 1 kHz. Two robots compete on the track at the same time and their starting locations are depicted as the blue squares. In the event of a collision, the robot must back away from the impact within 2 seconds. The winner of the round is the robot that drops off the most dolls within two minutes. The <a href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
+                <p class="text-muted">The competition for 2016 was to design and build an autonomous robot capable of navigating a course, with the ability to pick up passengers at multiple locations and drop them off at a predetermined location. The roads on the course were marked with black tape (see the course map to the right) and the passengers were located on infrared beacons emitting at 1 kHz. Two robots compete on the track at the same time and their starting locations are depicted as the blue squares. In the event of a collision, the robot must back away from the impact within 2 seconds. The winner of the round is the robot that drops off the most dolls within two minutes. The <a style="color: #333" href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a style="color: #333" href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
             </div>
 
             <div class="col-sm-4 col-xs-12 text-center">
@@ -127,7 +118,6 @@
                 <p class="text-muted">This website was made by the four students making up team 5 in the 2016 competition. From our hard work we were rewarded with second place in the robot competition and a perfect score on our robot. The purpose of the website is to outline the scope of the project and some of the solutions we came up with in designing an autonomous system that was able to reliably perform the necessary functionality. We are very proud of the result and hope visitors to the site appreciate the effort that has been required.</p>
 
             </div>
-        </div>
         </div>
     </section>
 
@@ -898,6 +888,8 @@
                                     The Ray has four touch sensors on the front behind its metal bumper. This allows it to detect collisions with the sidewalks and the opposing robot on the track. Two sensors are located on the front of the robot, and two on the angled panels connecting the front and the sides. The two touch sensors on the left half of the robot and the two on the right half are each combined into one signal, producing an effective "OR" functionality between the two on each half. This allows us to have one digital input for the left half, and one for the right, while still utilizing four sensors for increased accuracy.
 
                                 </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+
                             </div>
                         </div>
                     </div>
@@ -922,9 +914,10 @@
                             <div class="modal-body">
                                 <h2>IR Filtration</h2>
                                 <img class="img-responsive img-centered" src="img/electrical/th%20ir%20filtration.jpg" alt="">
-                                <p class="item-intro text-muted">DC block, <a href="http://mysite.du.edu/~etuttle/electron/elect65.htm">biquad</a> filtering and signal rectifying all in one</p>
+                                <p class="item-intro text-muted">DC block, <a style="color: #333" href="http://mysite.du.edu/~etuttle/electron/elect65.htm">biquad</a> filtering and signal rectifying all in one</p>
                                 <p>The IR circuits combined a DC block, a biquad filter, a signal rectifier and an amplifier to produce an analog DC signal proportional to the strength of the signal detected.</p>
                                 <p>The DC block removed the DC component of the signal. The biquad filter removes all signals that are not within a certain frequency range (tuned to detect 1 kHz, with a range of approximately +/- 500Hz). The signal rectifier takes the output of the biquad filter to produce the final, nearly DC signal (using a large decay constant), it was also slightly modified to provide further amplification of the signal. This gave us a near analog voltage that could be reliably read by the processor board.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
                     </div>
@@ -954,6 +947,7 @@
                                     Boris was designed as an alternative to wires. It allowed the Ray to have a clean internal electrical system by acting as a hub for our circuits and handling all connections between them. It removed the need for dozens of wires by providing power rails to the circuits from very few external connections, and made all inputs and outputs extremely accessible and easy to connect to the processor board.
                                 </p>
                                 <p>Boris also allowed the IR circuits and H-bridges to be plugged in using a modular interface. All of our circuits could directly plug into Boris, and could be very easily removed and replaced in a matter of seconds. It also minimized the possibilities for issues from loose connections, by having all connections close together and often in a single cable/row of pins. </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
 
                             </div>
                         </div>
@@ -981,9 +975,11 @@
                                 <h2>TINAH</h2>
                                 <p class="item-intro text-muted">Controlling the robot.</p>
                                 <img class="img-responsive img-centered" src="img/electrical/TINAH_Pinout.png" alt="">
-                                <p>Image Source: <a href="http://projectlab.engphys.ubc.ca/enph-253-2016/tinah-2016/">Engineering Physics Project Lab</a></p>
+                                <p>Image Source: <a style="color: #333" href="http://projectlab.engphys.ubc.ca/enph-253-2016/tinah-2016/">Engineering Physics Project Lab</a></p>
                                 <p>The TINAH board was the brain of the robot. It acted as our main processor/computer and ran all of our code. It is a modified Arduino board custom-made for this course and provided by the instructors. It contains 8 analog inputs, 16 digital inputs/outputs, 8 PWM analog outputs, 4 motor outputs, multiple servo outputs, as well as some knobs, switches, buttons, and an LCD screen. TINAH is powered off a 16.7V LiPo battery. </p>
                                 <p>We mounted our TINAH vertically on the inside of the robot against the left wall. This allowed it to take up minimal space as well as have all its inputs and outputs be as close as possible to Boris (where most of them needed to be connected).</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+
                             </div>
                         </div>
                     </div>
@@ -1011,6 +1007,8 @@
                                 <p class="item-intro text-muted">Powering the drivetrain.</p>
                                 <img class="img-responsive img-centered" src="img/electrical/H-Bridge.png" alt="">
                                 <p>Our system made use of two H-bridge circuits to drive the robot at a high power. The TINAH board was limited in the current that it could provide through the motor outputs, so external power circuitry was needed. One circuit was used for each motor/wheel of the drivetrain. It made use of four MOSFET's and four Zener diodes to switch the motor quickly and at a high current. </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+
                             </div>
                         </div>
                     </div>
@@ -1037,9 +1035,11 @@
                                 <h2>Servo Driver</h2>
                                 <p class="item-intro text-muted">Operating the claw.</p>
                                 <img class="img-responsive img-centered" src="img/electrical/Servo_Motor.jpg" alt="">
-                                <p>Image Source: <a href="http://www.dfrobot.com/index.php?route=product/product&product_id=255#.V65KcSgrK01">dfrobot</a></p>
+                                <p>Image Source: <a style="color: #333" href="http://www.dfrobot.com/index.php?route=product/product&product_id=255#.V65KcSgrK01">dfrobot</a></p>
                                 <p>We decided to use a small servo motor to reliably and accurately open and close the claw on the robot's arm. The claw was mounted at the end of the arm using some 3D printed brackets and screws. A small gear was super glued to the servo that interfaced with the gears at the base of the robot's fingers. Open/close angles were determined experimentally.</p>
                                 <p>Because the TINAH board is very limited in the current that it can provide, the servo needed to be powered externally. To do this, we used an 8.4V LiPo battery that was regulated to 5V using a 7805c voltage regulator. The battery, as well as the voltage regulator, plugged into Boris for modularity, and the regulated voltage was plugged into TINAH's servo "input power" (jumped to TINAH's internal 5V during normal operation). </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+
                             </div>
                         </div>
                     </div>
@@ -1127,7 +1127,7 @@
                                 <h2>State Machine</h2>
                                 <img class="img-responsive img-centered" src="img/Software/controller.PNG" alt="">
                                 <p>The behaviour of the platform was set up so as to be defined by a number of states. Enumerations gave a fast and readable way of executing commands appropriate for a given state and allowed for slim communication-channels between our objects, maintaining encapsulation.</p>
-                                <p>We had a number of classes that made use of all of our states. The main one was the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Controller.cpp">Controller</a> class. It determined which state we were in and acted appropriately, delegating responsibility to the other classes. The controller determined the state from the information that was given to it by the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Robot.cpp">Robot</a> class' "cruise" function.</p>
+                                <p>We had a number of classes that made use of all of our states. The main one was the <a style="color: #333" href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Controller.cpp">Controller</a> class. It determined which state we were in and acted appropriately, delegating responsibility to the other classes. The controller determined the state from the information that was given to it by the <a style="color: #333" href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Robot.cpp">Robot</a> class' "cruise" function.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
@@ -1155,7 +1155,7 @@
                                 <h2>PID Control</h2>
                                 <p class="item-intro text-muted">Tape-following</p>
                                 <p> A large portion of this project was getting the robot to accurately drive along the streets of the city. The streets were marked with black electrical tape. QRD sensors (see electrical section) were used to differentiate the tape from the white competition surface. A PID algorithm was used to determine the appropriate motor-responses based on the sensor-readings. As our sensors only provided a discrete approximation of the continuous error-function (displacement from centre of tape), we made approximations based on itteration-cycles in order to obtain a more nuanced derivative gain.</p>
-                                <p>Tuning was done experimentally. The way we computed each component of the control algorithm can be viewed in <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Tape.cpp">Tape</a>. Tuning constants were all defined in the separate <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Config.hpp">Config</a> header file.</p>
+                                <p>Tuning was done experimentally. The way we computed each component of the control algorithm can be viewed in <a style="color: #333" href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Tape.cpp">Tape</a>. Tuning constants were all defined in the separate <a style="color: #333" href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Config.hpp">Config</a> header file.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
@@ -1210,7 +1210,7 @@
                                 <h2>GitHub</h2>
                                 <p>As we had multiple members working on the same code, often in parallel, version control was needed. We chose to use Git and GitHub, as it is used in industry and we wanted to expand our skill-set. This allowed us all to work on implementations in parallel. We tested out a few features that did not work as intended, and this form of version control allowed us to easily revert to previous code that was in a working state.</p>
                                 <p>We also used branching when working on new features. When one portion of the code had been tested and verified, we would branch it before moving onto the next segment (eg. progressing from tape following to tape following + IR sensing). This ensured that individual components of the code could be individually tested and allowed for a modular program.</p>
-                                <p>All of our code can be viewed in our GitHub repository <a href="https://github.com/NooberRobotics/TheRay/tree/master/TheRay">here</a>.</p>
+                                <p>All of our code can be viewed in our GitHub repository <a style="color: #333" href="https://github.com/NooberRobotics/TheRay/tree/master/TheRay">here</a>.</p>
 
                                 <img class="img-responsive img-centered" src="img/Software/CodeReview.jpg" alt="">
 
@@ -1240,5 +1240,6 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+</body>
 
 </html>
