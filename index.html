@@ -100,24 +100,27 @@
             </div>
 
             <div class="row">
-                <h4 class="service-heading" style="text-align: left">ENPH 253: Introduction to Instrument Design</h4>
-                <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the Engineering Physics program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
-            </div>
-            <div class="col-sm-8 col-xs-12">
-                <h4 class="service-heading" style="text-align: left">2016 competition</h4>
-                <p class="text-muted">The competition for 2016 was to design and build an autonomous robot capable of navigating a course, with the ability to pick up passengers at multiple locations and drop them off at a predetermined location. The roads on the course were marked with black tape (see the course map to the right) and the passengers were located on infrared beacons emitting at 1 kHz. Two robots compete on the track at the same time and their starting locations are depicted as the blue squares. In the event of a collision, the robot must back away from the impact within 2 seconds. The winner of the round is the robot that drops off the most dolls within two minutes. The <a style="color: #333" href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a style="color: #333" href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
+                <div class="col-xs-12">
+                    <h4 class="service-heading" style="text-align: left">ENPH 253: Introduction to Instrument Design</h4>
+                    <p class="text-muted">This is an annual 5 credit course offered at the University of British Columbia (UBC) in the standard timetable of the Engineering Physics program. The students work together in groups of four and construct an autonomous robot to enter in a competition at the end of the term. The nature of the competition is different every year. </p>
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <h4 class="service-heading" style="text-align: left">2016 competition</h4>
+                    <p class="text-muted">The competition for 2016 was to design and build an autonomous robot capable of navigating a course, with the ability to pick up passengers at multiple locations and drop them off at a predetermined location. The roads on the course were marked with black tape (see the course map to the right) and the passengers were located on infrared beacons emitting at 1 kHz. Two robots compete on the track at the same time and their starting locations are depicted as the blue squares. In the event of a collision, the robot must back away from the impact within 2 seconds. The winner of the round is the robot that drops off the most dolls within two minutes. The <a style="color: #333" href="http://projectlab.engphys.ubc.ca/enph-253-2016/competition-2016/">competition webpage</a> provides info for all the teams, and formal rules for this year's competition can be found <a style="color: #333" href="http://projectlab.engphys.ubc.ca/wp-content/uploads/enph253-2016-CompetitionRules-v2-0.pdf">here</a>. </p>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 text-center">
+                    <img src="img/course.png" class="img-responsive" alt="">
+                </div>
+
+                <div class="col-xs-12">
+                    <h4 class="service-heading" style="text-align: left">Team 5, Noober Robotics</h4>
+
+                    <p class="text-muted">This website was made by the four students making up team 5 in the 2016 competition. From our hard work we were rewarded with second place in the robot competition and a perfect score on our robot. The purpose of the website is to outline the scope of the project and some of the solutions we came up with in designing an autonomous system that was able to reliably perform the necessary functionality. We are very proud of the result and hope visitors to the site appreciate the effort that has been required.</p>
+
+                </div>
             </div>
 
-            <div class="col-sm-4 col-xs-12 text-center">
-                <img src="img/course.png" class="img-responsive" alt="">
-            </div>
-
-            <div class="col-xs-12">
-                <h4 class="service-heading" style="text-align: left">Team 5, Noober Robotics</h4>
-
-                <p class="text-muted">This website was made by the four students making up team 5 in the 2016 competition. From our hard work we were rewarded with second place in the robot competition and a perfect score on our robot. The purpose of the website is to outline the scope of the project and some of the solutions we came up with in designing an autonomous system that was able to reliably perform the necessary functionality. We are very proud of the result and hope visitors to the site appreciate the effort that has been required.</p>
-
-            </div>
         </div>
     </section>
 
@@ -1125,7 +1128,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>State Machine</h2>
-                                <img class="img-responsive img-centered" src="img/Software/controller.PNG" alt="">
+                                <img class="img-responsive img-centered" src="img/software/controller.PNG" alt="">
                                 <p>The behaviour of the platform was set up so as to be defined by a number of states. Enumerations gave a fast and readable way of executing commands appropriate for a given state and allowed for slim communication-channels between our objects, maintaining encapsulation.</p>
                                 <p>We had a number of classes that made use of all of our states. The main one was the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Controller.cpp">Controller</a> class. It determined which state we were in and acted appropriately, delegating responsibility to the other classes. The controller determined the state from the information that was given to it by the <a href="https://github.com/NooberRobotics/TheRay/blob/master/TheRay/Robot.cpp">Robot</a> class' "cruise" function.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -1181,7 +1184,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>X-Code + Arduino</h2>
-                                <img class="img-responsive img-centered" src="img/Software/xcode+arduinowb.PNG" alt="">
+                                <img class="img-responsive img-centered" src="img/software/xcode+arduinowb.PNG" alt="">
                                 <p>All of our code was written in C++. X-Code was used as IDE for its elegance and functionality such as auto-complete and Git/GitHub integration. Our processor ran Arduino, so we used a .ino file to launch our Controller from the Arduino environment.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
@@ -1212,7 +1215,7 @@
                                 <p>We also used branching when working on new features. When one portion of the code had been tested and verified, we would branch it before moving onto the next segment (eg. progressing from tape following to tape following + IR sensing). This ensured that individual components of the code could be individually tested and allowed for a modular program.</p>
                                 <p>All of our code can be viewed in our GitHub repository <a href="https://github.com/NooberRobotics/TheRay/tree/master/TheRay">here</a>.</p>
 
-                                <img class="img-responsive img-centered" src="img/Software/CodeReview.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/software/CodeReview.jpg" alt="">
 
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
