@@ -257,7 +257,7 @@ fieldset[disabled] .btn-xl:hover {
 header {
     background-image: url(../img/ray%20dark.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
