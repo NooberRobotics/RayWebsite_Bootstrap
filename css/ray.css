@@ -14,7 +14,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: #fec503;
 }
 
 p {
@@ -35,14 +35,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #fec503;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #f6bf01;
 }
 
 h1,
@@ -75,6 +75,10 @@ h6 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
+}
+
+.btn-wrap {
     text-align: center;
 }
 
@@ -279,6 +283,11 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.shadow {
+    text-shadow: 1px 1px 5px black;
 }
 
 header .intro-text .intro-lead-in {
@@ -799,6 +808,12 @@ section#contact {
     background-repeat: no-repeat;
 }
 
+section#contact p {
+    color: whitesmoke;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
 section#contact .section-heading {
     color: white;
 }
@@ -931,6 +946,11 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
+    text-align: center;
+}
+
+.portfolio-modal .modal-content h3 {
+    text-align: center;
 }
 
 .portfolio-modal .modal-content p {
@@ -1021,10 +1041,24 @@ img::-moz-selection {
     padding-bottom: 4rem;
 }
 
+#main-footer a {
+    color: #965c01;
+}
+
 .copyright {
     padding-top: 8rem;
 }
 
 #team {
     padding-bottom: 8rem;
+}
+
+.video {
+    padding-bottom: 2rem;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
