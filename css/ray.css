@@ -268,7 +268,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    background-image: url('../img/ray%20dark.jpg');
+    background-image: url('../img/ray-dark.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
@@ -283,11 +283,11 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    text-shadow: 1px 1px 5px black;
+    /*    text-shadow: 1px 1px 5px black;*/
 }
 
 .shadow {
-    text-shadow: 1px 1px 5px black;
+    /*    text-shadow: 1px 1px 5px black;*/
 }
 
 header .intro-text .intro-lead-in {
