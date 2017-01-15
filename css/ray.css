@@ -283,11 +283,11 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    /*    text-shadow: 1px 1px 5px black;*/
+    text-shadow: 1px 1px 5px black;
 }
 
 .shadow {
-    /*    text-shadow: 1px 1px 5px black;*/
+    text-shadow: 1px 1px 5px black;
 }
 
 header .intro-text .intro-lead-in {
